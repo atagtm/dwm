@@ -123,6 +123,17 @@ static const Layout layouts[] = { /* alt glyphs: 󱡗 󱏋 */
 #define STATUSBAR "dwmblocks"
 #define BROWSER "qutebrowser"
 
+/* Multimedia key definitions */
+/* As of Logitech-K200 USB keybod, grabbed by xev */
+#define XK_XF86AudioLowerVolume 0x1008ff11
+#define XK_XF86AudioMute        0x1008ff12
+#define XK_XF86AudioRaiseVolume 0x1008ff13
+#define XK_XF86AudioPlay        0x1008ff14
+#define XK_XF86HomePage         0x1008ff18
+#define XK_XF86Mail             0x1008ff19
+#define XK_XF86Calculator       0x1008ff1d
+#define XK_XF86Sleep            0x1008ff2f
+
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbordercolor, "-sf", selfgcolor, NULL };
